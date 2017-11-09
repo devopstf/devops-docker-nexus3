@@ -1,0 +1,9 @@
+nexus:
+  image: devopstf/devops-docker-jdk
+  user: nexus
+  ports:
+    - "$port1:8081"
+    - "$port2:49083"  # Poner puertos de los repositorios creados
+  volumes:
+    - "$PATH:/opt/nexus3:Z"
+
