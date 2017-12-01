@@ -19,6 +19,5 @@ RUN \
     chown -R nfsnobody:nfsnobody /opt/nexus3
 
 USER nfsnobody
-##
 
 CMD ["/opt/nexus3/nexus-3.6.0-02/bin/nexus", "run"]
